@@ -1,0 +1,18 @@
+/* 
+
+This widget uses CSS from the 'main.css' file in the root folder.
+They are as follows:
+
+.clearfix
+.mn-panel
+h1.mn-title
+.mn-button
+
+*/
+
+#party {
+	font-size: 10px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #888;
+	margin-left: 5px;
+}

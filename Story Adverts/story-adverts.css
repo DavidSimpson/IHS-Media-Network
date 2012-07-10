@@ -1,0 +1,111 @@
+/* 
+
+This widget uses CSS from the 'main.css' file in the root folder.
+They are as follows:
+
+.clearfix
+.mn-panel
+
+*/
+
+.mn-blog-ad {
+	margin-bottom: 30px;
+}
+
+a.mn-link {
+	border: none;
+	text-decoration: none;
+}
+
+img.mn-center-thumb {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    float: left;
+    border: 1px solid #888;
+	-webkit-box-shadow: inset 0px 3px 5px 0px rgba(225, 225, 225, 0.7);
+	box-shadow: inset 0px 3px 5px 0px rgba(225, 225, 225, 0.7);
+}
+
+.mn-blog-ad-text {
+    float: left;
+    width: 278px;
+}
+
+.mn-blog-channels {
+    color: #027AA8;
+    margin-bottom: 5px;
+}
+
+a.mn-blog-channel-link {
+    text-decoration: none;
+    color: #027AA8;
+    font-family:  Helvetica Neue , Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0 5px 0 2px;
+}
+
+a.mn-blog-channel-link:hover {
+	color: #153f51;
+}
+
+a.mn-blog-channel-link:last-child {
+    margin-right: 0;
+}
+
+a.mn-blog-title {
+	font-family:  Helvetica Neue , Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	line-height: 110%;
+	margin: 0 0 5px;
+	color: #333 !important;
+	font-weight: bold;
+	display: block;
+}
+
+a.mn-blog-title:hover {
+	color: #000 !important;
+}
+
+small.mn-blog-date {
+	font-family:  Helvetica Neue , Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 15px;
+	color: #555;
+}
+
+p.mn-blog-description {
+	margin: 5px 0 0;
+	font-family:  Helvetica Neue , Helvetica, Arial, sans-serif;
+	color: #555;
+	font-size: 13px;
+}
+
+a.mn-read-more {
+	color: #027AA8 !important;
+}
+
+a.mn-read-more:hover {
+	color: #153f51 !important;
+}
+
+.mn-group-thumbs {
+	width: 152px;
+	height: 152px;
+	float: left;
+	margin-right: 20px;
+}
+
+img.mn-group-thumb {
+	width: 70px;
+	height: 70px;
+	float: left;
+	border: 1px solid #888;
+	-webkit-box-shadow: inset 0px 3px 5px 0px rgba(225, 225, 225, 0.7);
+	box-shadow: inset 0px 3px 5px 0px rgba(225, 225, 225, 0.7);
+}
+
+img.mn-thumb-top-left { margin: 0 8px 8px 0; }
+img.mn-thumb-top-right { margin: 0 0 8px 0; }
+img.mn-thumb-bottom-left { margin: 0 8px 0 0; }
+img.mn-thumb-bottom-right { margin: 0; }

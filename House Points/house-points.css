@@ -1,3 +1,14 @@
+/* 
+
+This widget uses CSS from the 'main.css' file in the root folder.
+They are as follows:
+
+.clearfix
+.mn-panel
+.mn-divider
+
+*/
+
 .mn-points-bar {
 	color: white;
 	font-weight: bold;
