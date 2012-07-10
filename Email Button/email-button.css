@@ -1,0 +1,66 @@
+/* 
+
+This widget uses CSS from the 'main.css' file in the root folder.
+They are as follows:
+
+.clearfix
+.mn-panel
+.mn-divider
+
+*/
+
+a#mn-email {
+	position: relative;
+	background-color: #F8F8F8;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(white),to(#DEDEDE));
+	background-image: -moz-linear-gradient(top,white,#DEDEDE);
+	background-image: -o-linear-gradient(top,white,#DEDEDE);
+	background-image: -ms-linear-gradient(top,white,#DEDEDE);
+	background-image: linear-gradient(top,white,#DEDEDE);
+	border: #CCC solid 1px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #333;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	height: 18px;
+	max-width: 98%;
+	overflow: hidden;
+	padding: 2px 3px;
+	font-family:  Helvetica Neue , Helvetica, Arial, sans-serif;
+	height: 20px !important;
+	margin-top: 2px;
+}
+
+a#mn-email:hover,
+a#mn-email:focus,
+a#mn-email:active {
+	border-color: #BBB;
+	background-color: #F8F8F8;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#F8F8F8),to(#D9D9D9));
+	background-image: -moz-linear-gradient(top,#F8F8F8,#D9D9D9);
+	background-image: -o-linear-gradient(top,#F8F8F8,#D9D9D9);
+	background-image: -ms-linear-gradient(top,#F8F8F8,#D9D9D9);
+	background-image: linear-gradient(top,#F8F8F8,#D9D9D9);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+a#mn-email:focus {
+	border-color: #0089CB;
+}
+a#mn-email:active {
+	background-color: #EFEFEF;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 3px 5px rgba(0,0,0,0.1);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+}

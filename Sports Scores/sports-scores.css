@@ -1,0 +1,88 @@
+/* 
+
+This widget uses CSS from the 'main.css' file in the root folder.
+They are as follows:
+
+.clearfix
+.mn-panel
+
+*/
+
+.mn-scores {
+	width: 223px;
+	border: 1px solid #999;
+	border-left: none;	
+	border-bottom: 1px solid #000;
+	float: left;
+}
+
+.mn-scores:first-child {
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+}
+
+.mn-sport-info {
+	padding: 5px 0;
+	
+	background-color: #afb6c8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(224, 227, 236)), to(rgb(175, 182, 200)));
+	background-image: -webkit-linear-gradient(top, rgb(224, 227, 236), rgb(175, 182, 200));
+	background-image: -moz-linear-gradient(top, rgb(224, 227, 236), rgb(175, 182, 200));
+	background-image: -o-linear-gradient(top, rgb(224, 227, 236), rgb(175, 182, 200));
+	background-image: -ms-linear-gradient(top, rgb(224, 227, 236), rgb(175, 182, 200));
+	background-image: linear-gradient(top, rgb(224, 227, 236), rgb(175, 182, 200));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e0e3ec', EndColorStr='#afb6c8');
+	
+	border-bottom: 1px solid #FFF;
+}
+
+table.mn-sport-table {
+	text-align: center;
+	width: 223px;
+	color: #555;
+	font-size: 15px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(43, 44, 48)), to(rgb(29, 30, 34)));
+	background-image: -webkit-linear-gradient(top, rgb(43, 44, 48), rgb(29, 30, 34));
+	background-image: -moz-linear-gradient(top, rgb(43, 44, 48), rgb(29, 30, 34));
+	background-image: -o-linear-gradient(top, rgb(43, 44, 48), rgb(29, 30, 34));
+	background-image: -ms-linear-gradient(top, rgb(43, 44, 48), rgb(29, 30, 34));
+	background-image: linear-gradient(top, rgb(43, 44, 48), rgb(29, 30, 34));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#2b2c30', EndColorStr='#1d1e22');
+	
+	border-spacing: 1px;
+}
+
+.mn-sport-title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 17px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #333;
+	
+	text-shadow: 0px 1px 0px #FFF;
+	filter: dropshadow(color=#FFF, offx=0, offy=1);
+}
+
+.mn-sport-date {
+	text-align: center;
+	font-size: 13px;
+	font-style: italic;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #333;
+	text-shadow: 0px 1px 0px #FFF;
+	filter: dropshadow(color=#FFF, offx=0, offy=1);
+}
+
+table.mn-sport-table td {
+	padding: 5px 0;
+	color: #FFF;
+	border-right: 1px solid #000;
+	margin: 0;
+}
+
+table.mn-sport-table td:last-child {
+	border-right: none;
+	border-left: 1px solid #444;
+}
