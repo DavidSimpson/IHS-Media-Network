@@ -5,5 +5,18 @@ They are as follows:
 
 .clearfix
 .mn-panel
+h1.mn-title
+h2.mn-sports-sub
+table.mn-scores-bar
+table.mn-scores-bar tr
+table.mn-scores-bar td
+table.mn-scores-bar td:last-child
+table.mn-scores-bar td:first-child
+.mn-scores-contestant
+.mn-scores-inner
+.mn-scores-inner-left
+.mn-scores-inner-right
+.mn-scores-right
+.mn-scores-left
 
 */
