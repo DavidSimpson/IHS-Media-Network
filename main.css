@@ -4,9 +4,15 @@ This is the main CSS file for IHS Media Network.
 
 */
 
+/* GENERAL STYLES */
+		
 * {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+}
+
+#PanelGeneralContainer_3960692 {
+	display: none;
 }
 			
 img {
@@ -14,14 +20,18 @@ img {
 	image-rendering: optimizeQuality;
 }
 
+mn-panel a {
+	-webkit-transition: color .25s;
+	-moz-transition: color .25s;
+	-ms-transition: color .25s;
+	-o-transition: color .25s;
+	transition: color .25s;
+}
+
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 .clearfix { display: inline-block; }
 .clearfix { display: block; } 
 .none { display: none; }
-
-.mn-panel {
-	margin-bottom: 10px;
-}
 
 .mn-panel a {
 	color: inherit;
@@ -29,7 +39,7 @@ img {
 }
 
 .mn-divider {
-	margin: 10px 0 15px;
+	margin: 10px 0 10px;
 }
 
 h1.mn-title {
@@ -88,7 +98,416 @@ a.mn-button:active {
 
 p.mn-para {
 	font-family: Helvetica Neue , Helvetica, Arial, sans-serif;
+	font-size: 13px; color: #555;
+	line-height: 140%;
+}
+
+
+/* STORY ADVERTS */
+
+.mn-blog-ad {
+	margin-bottom: 40px;
+}
+
+a.mn-link {
+	border: none;
+	text-decoration: none;
+}
+
+img.mn-center-thumb {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    float: left;
+    border: 1px solid #888;
+	-webkit-box-shadow: inset 0px 3px 5px 0px rgba(225, 225, 225, 0.7);
+	box-shadow: inset 0px 3px 5px 0px rgba(225, 225, 225, 0.7);
+}
+
+.mn-blog-ad-text {
+    float: left;
+    width: 278px;
+}
+
+.mn-blog-channels {
+    color: #027AA8;
+    margin-bottom: 5px;
+}
+
+a.mn-blog-channel-link {
+    text-decoration: none;
+    color: #027AA8;
+    font-family:  Helvetica Neue , Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0 5px 0 2px;
+}
+
+a.mn-blog-channel-link:hover {
+	color: #153f51;
+}
+
+a.mn-blog-channel-link:last-child {
+    margin-right: 0;
+}
+
+a.mn-blog-title {
+	font-family:  Helvetica Neue , Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	line-height: 110%;
+	margin: 0 0 5px;
+	color: #333 !important;
+	font-weight: bold;
+	display: block;
+}
+
+a.mn-blog-title:hover {
+	color: #000 !important;
+}
+
+small.mn-blog-date {
+	font-family:  Helvetica Neue , Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 15px;
+	color: #555;
+}
+
+p.mn-blog-description {
+	margin: 5px 0 0;
+	font-family:  Helvetica Neue , Helvetica, Arial, sans-serif;
+	color: #555;
+	font-size: 13px;
+}
+
+a.mn-read-more {
+	color: #027AA8 !important;
+}
+
+a.mn-read-more:hover {
+	color: #153f51 !important;
+}
+
+/* Group Thumbs */
+
+.mn-group-thumbs {
+	width: 152px;
+	height: 152px;
+	float: left;
+	margin-right: 20px;
+}
+
+img.mn-group-thumb {
+	width: 70px;
+	height: 70px;
+	float: left;
+	border: 1px solid #888;
+	-webkit-box-shadow: inset 0px 3px 5px 0px rgba(225, 225, 225, 0.7);
+	box-shadow: inset 0px 3px 5px 0px rgba(225, 225, 225, 0.7);
+}
+
+img.mn-thumb-top-left { margin: 0 8px 8px 0; }
+img.mn-thumb-top-right { margin: 0 0 8px 0; }
+img.mn-thumb-bottom-left { margin: 0 8px 0 0; }
+img.mn-thumb-bottom-right { margin: 0; }
+
+
+/* HOUSE POINTS */
+
+.mn-points-bar {
+	color: white;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	filter: dropshadow(color=rgba(0, 0, 0, 0.25), offx=0, offy=1);
+	-webkit-box-shadow: inset 0 1px 5px 0 rgba(225, 225, 225, 0.25);
+	box-shadow: inset 0 2px 3px 0 rgba(225, 225, 225, 0.25);
+}
+
+.mn-points-inner {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: white;
+	float: right;
+	width: 10px;
+	padding: 3px 10px 1px;
+	font-weight: normal;
+}
+
+.house-name {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: white;
+	font-size: 14px;
+	float: left;
+	padding: 2px 0;
+}
+
+.mn-points-bar#palace {
+	background-color: #5c931a;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(137, 204, 63)),to(rgb(92, 147, 26)));
+	background-image: -webkit-linear-gradient(top, rgb(137, 204, 63), rgb(92, 147, 26));
+	background-image: -moz-linear-gradient(top, rgb(137, 204, 63), rgb(92, 147, 26));
+	background-image: -o-linear-gradient(top, rgb(137, 204, 63), rgb(92, 147, 26));
+	background-image: -ms-linear-gradient(top, rgb(137, 204, 63), rgb(92, 147, 26));
+	background-image: linear-gradient(top, rgb(137, 204, 63), rgb(92, 147, 26));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #89cc3f , EndColorStr= #5c931a );
+	border: 1px solid #82A224;
+}
+	
+.mn-points-inner#palace-inner {
+	background-color: #89cc3f;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(92, 147, 26)), to(rgb(137, 204, 63)));
+	background-image: -webkit-linear-gradient(top, rgb(92, 147, 26), rgb(137, 204, 63));
+	background-image: -moz-linear-gradient(top, rgb(92, 147, 26), rgb(137, 204, 63));
+	background-image: -o-linear-gradient(top, rgb(92, 147, 26), rgb(137, 204, 63));
+	background-image: -ms-linear-gradient(top, rgb(92, 147, 26), rgb(137, 204, 63));
+	background-image: linear-gradient(top, rgb(92, 147, 26), rgb(137, 204, 63));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #5c931a , EndColorStr= #89cc3f );
+}
+
+.mn-points-bar#tower {
+	background-color: #bd9a0c;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(253, 208, 18)), to(rgb(189, 154, 12)));
+	background-image: -webkit-linear-gradient(top, rgb(253, 208, 18), rgb(189, 154, 12));
+	background-image: -moz-linear-gradient(top, rgb(253, 208, 18), rgb(189, 154, 12));
+	background-image: -o-linear-gradient(top, rgb(253, 208, 18), rgb(189, 154, 12));
+	background-image: -ms-linear-gradient(top, rgb(253, 208, 18), rgb(189, 154, 12));
+	background-image: linear-gradient(top, rgb(253, 208, 18), rgb(189, 154, 12));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #fdd012 , EndColorStr= #bd9a0c );
+	border: 1px solid #C5972E;
+}
+
+.mn-points-inner#tower-inner {
+	background-color: #fdd012;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(189, 154, 12)), to(rgb(253, 208, 18)));
+	background-image: -webkit-linear-gradient(top, rgb(189, 154, 12), rgb(253, 208, 18));
+	background-image: -moz-linear-gradient(top, rgb(189, 154, 12), rgb(253, 208, 18));
+	background-image: -o-linear-gradient(top, rgb(189, 154, 12), rgb(253, 208, 18));
+	background-image: -ms-linear-gradient(top, rgb(189, 154, 12), rgb(253, 208, 18));
+	background-image: linear-gradient(top, rgb(189, 154, 12), rgb(253, 208, 18));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #bd9a0c , EndColorStr= #fdd012 );
+}
+
+.mn-points-bar#castle {
+	background-color: #bc3b44;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 98, 108)), to(rgb(188, 59, 68)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 98, 108), rgb(188, 59, 68));
+	background-image: -moz-linear-gradient(top, rgb(255, 98, 108), rgb(188, 59, 68));
+	background-image: -o-linear-gradient(top, rgb(255, 98, 108), rgb(188, 59, 68));
+	background-image: -ms-linear-gradient(top, rgb(255, 98, 108), rgb(188, 59, 68));
+	background-image: linear-gradient(top, rgb(255, 98, 108), rgb(188, 59, 68));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #ff626c , EndColorStr= #bc3b44 );
+	border: 1px solid #BF3137;
+}
+
+.mn-points-inner#castle-inner {
+	background-color: #ff626c;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(188, 59, 68)), to(rgb(255, 98, 108)));
+	background-image: -webkit-linear-gradient(top, rgb(188, 59, 68), rgb(255, 98, 108));
+	background-image: -moz-linear-gradient(top, rgb(188, 59, 68), rgb(255, 98, 108));
+	background-image: -o-linear-gradient(top, rgb(188, 59, 68), rgb(255, 98, 108));
+	background-image: -ms-linear-gradient(top, rgb(188, 59, 68), rgb(255, 98, 108));
+	background-image: linear-gradient(top, rgb(188, 59, 68), rgb(255, 98, 108));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #bc3b44 , EndColorStr= #ff626c );
+}
+
+.mn-points-bar#abbey {
+	background-color: #4197b8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(104, 209, 248)), to(rgb(65, 151, 184)));
+	background-image: -webkit-linear-gradient(top, rgb(104, 209, 248), rgb(65, 151, 184));
+	background-image: -moz-linear-gradient(top, rgb(104, 209, 248), rgb(65, 151, 184));
+	background-image: -o-linear-gradient(top, rgb(104, 209, 248), rgb(65, 151, 184));
+	background-image: -ms-linear-gradient(top, rgb(104, 209, 248), rgb(65, 151, 184));
+	background-image: linear-gradient(top, rgb(104, 209, 248), rgb(65, 151, 184));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #68d1f8 , EndColorStr= #4197b8 );
+	border: 1px solid #548CBF;
+}
+
+.mn-points-inner#abbey-inner {
+	background-color: #68d1f8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(65, 151, 184)), to(rgb(104, 209, 248)));
+	background-image: -webkit-linear-gradient(top, rgb(65, 151, 184), rgb(104, 209, 248));
+	background-image: -moz-linear-gradient(top, rgb(65, 151, 184), rgb(104, 209, 248));
+	background-image: -o-linear-gradient(top, rgb(65, 151, 184), rgb(104, 209, 248));
+	background-image: -ms-linear-gradient(top, rgb(65, 151, 184), rgb(104, 209, 248));
+	background-image: linear-gradient(top, rgb(65, 151, 184), rgb(104, 209, 248));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #4197b8 , EndColorStr= #68d1f8 );
+}
+
+
+/* PHOTO GALLERIES */
+
+img.mn-photo-gallery {
+	width: 120px;
+	float: left;
+	margin-right: 10px;
+}
+
+.mn-photo-gallery-text {
+	 float: left;
+	 width: 100px;
+	 padding-top: 10px;
+}
+
+a.mn-photo-title {
+	color: #333 !important;
+	font-size: 15px;
+	margin: 0;
+	font-weight: bold;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+a.mn-photo-title:hover {
+	color: #000 !important;
+}
+
+p.mn-photo-description {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #555;
+	font-size: 13px;
+	margin: 2px 0 0 0;
+}
+
+
+/* EVENTS */
+
+img.mn-event-thumb {
+	width: 85px;
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #888;
+	-webkit-box-shadow: inset 0px 3px 5px 0px rgba(225, 225, 225, 0.7);
+	box-shadow: inset 0px 3px 5px 0px rgba(225, 225, 225, 0.7);
+}
+
+.mn-event-text {
+	float: left;
+	width: 133px;
+}
+
+.mn-event-title {
+	color: #333 !important;
+	font-size: 15px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+small.mn-event-date {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-style: italic;
 	font-size: 13px;
 	color: #555;
-	line-height: 140%;
+	margin: 0;
+}
+
+p.mn-event-description {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #555;
+	margin: 4px 0 0 0;
+}
+
+
+/* SPORTS SCORES */
+
+h2.mn-sports-sub {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	padding: 3px 0;
+	color: #FFF;
+	margin: 0;
+	font-weight: normal;
+	text-align: center;
+	background-color: #353535;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(93, 93, 93)), to(rgb(53, 53, 53)));
+	background-image: -webkit-linear-gradient(top, rgb(93, 93, 93), rgb(53, 53, 53));
+	background-image: -moz-linear-gradient(top, rgb(93, 93, 93), rgb(53, 53, 53));
+	background-image: -o-linear-gradient(top, rgb(93, 93, 93), rgb(53, 53, 53));
+	background-image: -ms-linear-gradient(top, rgb(93, 93, 93), rgb(53, 53, 53));
+	background-image: linear-gradient(top, rgb(93, 93, 93), rgb(53, 53, 53));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #5d5d5d , EndColorStr= #353535 );
+	
+	border-top: 1px solid #EBEBEB;
+	border-left: 1px solid #EBEBEB;
+	border-right: 1px solid #EBEBEB;
+	
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+table.mn-scores-bar {
+	background-color: #dcdcdc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(220, 220, 220)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(220, 220, 220));
+	background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(220, 220, 220));
+	background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(220, 220, 220));
+	background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(220, 220, 220));
+	background-image: linear-gradient(top, rgb(255, 255, 255), rgb(220, 220, 220));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #ffffff , EndColorStr= #dcdcdc );
+	border: 1px solid #EBEBEB;
+	width: 100%;
+	
+	border-spacing: 0;
+	border-collapse: separate;
+}
+
+table.mn-scores-bar tr {
+}
+
+table.mn-scores-bar td {
+	width: 50%;
+	border-bottom: 1px solid #DDD;
+}
+
+table.mn-scores-bar td:last-child {
+	border-left: 1px solid #EEE;
+}
+
+table.mn-scores-bar td:first-child {
+	border-right: 1px solid #BBB;
+}
+
+.mn-scores-contestant {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #333;
+	font-size: 13px;
+	float: left;
+	margin-top: 3px;
+	font-weight: bold;
+}
+
+.mn-scores-inner {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #555;
+	font-weight: normal;
+	margin-top: 3px;
+	margin-bottom: 4px;
+	padding: 3px 5px 1px;
+	
+	background-color: #ffffff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(220, 220, 220)), to(rgb(255, 255, 255)));
+	background-image: -webkit-linear-gradient(top, rgb(220, 220, 220), rgb(255, 255, 255));
+	background-image: -moz-linear-gradient(top, rgb(220, 220, 220), rgb(255, 255, 255));
+	background-image: -o-linear-gradient(top, rgb(220, 220, 220), rgb(255, 255, 255));
+	background-image: -ms-linear-gradient(top, rgb(220, 220, 220), rgb(255, 255, 255));
+	background-image: linear-gradient(top, rgb(220, 220, 220), rgb(255, 255, 255));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr= #dcdcdc , EndColorStr= #ffffff );
+}
+
+.mn-scores-inner-left {
+	margin-right: 3px;
+	margin-left: 5px;
+}
+
+.mn-scores-inner-right {
+	margin-right: 5px;
+	margin-left: 3px;
+}
+
+.mn-scores-right {
+	float: right;
+}
+
+.mn-scores-left {
+	float: left;
 }
